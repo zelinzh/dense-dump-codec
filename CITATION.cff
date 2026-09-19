@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite Dense Dump Codec using the metadata below."
+title: "Dense Dump Codec"
+abstract: >-
+  Dense Dump Codec compresses dense GRMHD time series using original exact
+  anchors and channel-aware quantized residuals. It supports random access,
+  PHDF reconstruction and native-array input for slow-light radiative transfer.
+type: software
+version: 0.4.0rc1
+repository-code: "https://github.com/zelinzh/dense-dump-codec"
+license: BSD-3-Clause
+authors:
+  - family-names: Zhang
+    given-names: Zelin
+keywords:
+  - scientific data compression
+  - GRMHD
+  - slow-light radiative transfer

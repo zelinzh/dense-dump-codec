@@ -1,0 +1,31 @@
+name: CPU tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: sudo apt-get update && sudo apt-get install -y liblz4-1 build-essential
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pytest -q
+      - run: python -m build
+      - name: Wheel outside source checkout
+        run: |
+          python -m venv /tmp/ddc-wheel
+          /tmp/ddc-wheel/bin/python -m pip install dist/*.whl
+          cd /tmp
+          /tmp/ddc-wheel/bin/python "$GITHUB_WORKSPACE/examples/make_synthetic_sequence.py" --output-dir /tmp/ddc-demo/raw
+          /tmp/ddc-wheel/bin/ddc encode --segment-dir /tmp/ddc-demo/raw --output-dir /tmp/ddc-demo/archive
+          /tmp/ddc-wheel/bin/ddc verify --manifest /tmp/ddc-demo/archive/sequence_manifest.json --sha256
+          /tmp/ddc-wheel/bin/ddc decode --manifest /tmp/ddc-demo/archive/sequence_manifest.json --sequence 13 --output-phdf /tmp/ddc-demo/frame.phdf
+          /tmp/ddc-wheel/bin/python "$GITHUB_WORKSPACE/examples/read_native_frame.py" --manifest /tmp/ddc-demo/archive/sequence_manifest.json
+          /tmp/ddc-wheel/bin/ddc prepare-cache --manifest /tmp/ddc-demo/archive/sequence_manifest.json --output-dir /tmp/ddc-demo/cache --sequence-min 0 --sequence-max 50 --minimum-free-gib 1 --workers 2
+          /tmp/ddc-wheel/bin/python "$GITHUB_WORKSPACE/examples/read_native_frame.py" --manifest /tmp/ddc-demo/archive/sequence_manifest.json --working-cache /tmp/ddc-demo/cache

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dense-dump-codec"
+version = "0.4.0rc1"
+description = "Temporal residual compression and bounded random access for dense simulation outputs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [{name = "Zhang Zelin and Dense Dump Codec contributors"}]
+dependencies = ["numpy>=1.24", "h5py>=3.8"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.urls]
+Repository = "https://github.com/zelinzh/dense-dump-codec"
+Issues = "https://github.com/zelinzh/dense-dump-codec/issues"
+Documentation = "https://github.com/zelinzh/dense-dump-codec#readme"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build>=1", "ruff>=0.5"]
+figures = ["matplotlib>=3.7"]
+
+[project.scripts]
+ddc = "dense_dump_codec.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dense_dump_codec*"]
+
+[tool.setuptools.package-data]
+dense_dump_codec = ["*.c", "include/*.hpp", "include/*.cuh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", ".", "scripts"]
+
+[tool.ruff]
+line-length = 100

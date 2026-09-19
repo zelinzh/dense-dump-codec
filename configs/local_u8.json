@@ -1,0 +1,16 @@
+{
+  "name": "local-u8",
+  "status": "paper implementation profile; not a universal accuracy guarantee",
+  "datasets": ["prims.rho", "prims.u", "prims.uvec", "prims.B"],
+  "dataset_bits": {"prims.rho": 8, "prims.u": 8, "prims.uvec": 5, "prims.B": 16},
+  "dataset_scale_percentiles": {"prims.rho": 99.9, "prims.u": 99.9, "prims.uvec": 99.5, "prims.B": 99.5},
+  "dataset_tile_shapes": {"prims.u": [8, 16, 32]},
+  "tile_axis_order": ["phi", "theta", "radius"],
+  "scale_mode": "block-channel",
+  "preserve_outliers": true,
+  "keyframe_stride": 25,
+  "keyframe_backend": "raw",
+  "archive_backend": "channel-bzip2-adaptive",
+  "channel_compression_level": 9,
+  "channel_chunk_frames": 5
+}

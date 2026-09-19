@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0rc1
+## 1.0.0
 
 - Promote the tested local-u8 tile formula into the offline and streaming
   encoding interfaces; record tile shapes in metadata and resume configuration.
@@ -10,4 +10,4 @@
   source/wheel packaging of command helpers.
 - Retain native arrays, ROI, LZ4 working caches, C/CUDA headers and compatibility
   backends; document their optional dependencies and limits.
-- Add source provenance, checksums, CI and release instructions.
+- Add checksums, CI and release instructions.

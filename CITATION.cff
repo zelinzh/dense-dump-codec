@@ -6,12 +6,37 @@ abstract: >-
   anchors and channel-aware quantized residuals. It supports random access,
   PHDF reconstruction and native-array input for slow-light radiative transfer.
 type: software
-version: 0.4.0rc1
+version: 1.0.0
 repository-code: "https://github.com/zelinzh/dense-dump-codec"
 license: BSD-3-Clause
 authors:
   - family-names: Zhang
     given-names: Zelin
+    orcid: "https://orcid.org/0009-0008-9585-1807"
+    email: "zhangzelin1@nbu.edu.cn"
+    affiliation: >-
+      Institute of Fundamental Physics and Quantum Technology, & School of Physical
+      Science and Technology, Ningbo University, Ningbo, Zhejiang 315211, P. R. China;
+      Zhejiang Key Laboratory of Extreme Universe, & BINGO Center, Ningbo University,
+      Ningbo, Zhejiang 315211, China
+  - family-names: Zhang
+    given-names: Zhenyu
+    orcid: "https://orcid.org/0000-0003-0869-4601"
+    affiliation: >-
+      Institute of Fundamental Physics and Quantum Technology, & School of Physical
+      Science and Technology, Ningbo University, Ningbo, Zhejiang 315211, P. R. China;
+      Zhejiang Key Laboratory of Extreme Universe, & BINGO Center, Ningbo University,
+      Ningbo, Zhejiang 315211, China
+  - family-names: Chen
+    given-names: Bin
+    orcid: "https://orcid.org/0000-0003-4509-9705"
+    affiliation: >-
+      Institute of Fundamental Physics and Quantum Technology, & School of Physical
+      Science and Technology, Ningbo University, Ningbo, Zhejiang 315211, P. R. China;
+      Zhejiang Key Laboratory of Extreme Universe, & BINGO Center, Ningbo University,
+      Ningbo, Zhejiang 315211, China;
+      School of Physics, & Center for High Energy Physics, Peking University,
+      No.5 Yiheyuan Rd, Beijing 100871, P. R. China
 keywords:
   - scientific data compression
   - GRMHD

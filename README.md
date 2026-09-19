@@ -162,6 +162,10 @@ lifecycle; [the Python API guide](docs/API.md) for bracket and batch reads; and
 [KPolaris integration](docs/KPOLARIS.md) for compact transport and radial ROI.
 Use one writer per output directory.
 
+## Contact
+
+Maintainer: Zelin Zhang — [zhangzelin1@nbu.edu.cn](mailto:zhangzelin1@nbu.edu.cn).
+
 ## License
 
 [BSD-3-Clause](LICENSE).
@@ -172,10 +176,10 @@ If you use DDC in your research, please cite the software:
 
 ```bibtex
 @software{zhang_dense_dump_codec,
-  author  = {Zhang, Zelin},
+  author  = {Zhang, Zelin and Zhang, Zhenyu and Chen, Bin},
   title   = {{Dense Dump Codec}},
   year    = {2026},
-  version = {0.4.0rc1},
+  version = {1.0.0},
   url     = {https://github.com/zelinzh/dense-dump-codec}
 }
 ```

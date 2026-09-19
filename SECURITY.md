@@ -12,5 +12,5 @@ directory and do not run concurrent writers there. Some legacy tools retry
 permission failures by making owned artifacts readable; shared sensitive inputs
 should not be used with those workflows without review.
 
-Report suspected vulnerabilities privately to the repository maintainer using
-the hosting platform's private reporting facility if enabled.
+Report suspected vulnerabilities to Zelin Zhang at
+[zhangzelin1@nbu.edu.cn](mailto:zhangzelin1@nbu.edu.cn).

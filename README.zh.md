@@ -140,20 +140,24 @@ Python 原生读取示例见 [API](docs/API.md)。KPolaris 的外部编译、
 LZ4 工作缓存、半径裁剪与紧凑传输见 [集成说明](docs/KPOLARIS.md)。
 工作缓存可在使用结束后删除，需要时重新生成。
 
-## 6. 许可
+## 6. 联系方式
+
+维护者：Zelin Zhang — [zhangzelin1@nbu.edu.cn](mailto:zhangzelin1@nbu.edu.cn)。
+
+## 7. 许可
 
 [BSD-3-Clause](LICENSE)。
 
-## 7. 引用
+## 8. 引用
 
 如果在研究中使用 DDC，请引用本软件：
 
 ```bibtex
 @software{zhang_dense_dump_codec,
-  author  = {Zhang, Zelin},
+  author  = {Zhang, Zelin and Zhang, Zhenyu and Chen, Bin},
   title   = {{Dense Dump Codec}},
   year    = {2026},
-  version = {0.4.0rc1},
+  version = {1.0.0},
   url     = {https://github.com/zelinzh/dense-dump-codec}
 }
 ```

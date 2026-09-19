@@ -4,16 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dense-dump-codec"
-version = "0.4.0rc1"
+version = "1.0.0"
 description = "Temporal residual compression and bounded random access for dense simulation outputs"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
-authors = [{name = "Zhang Zelin and Dense Dump Codec contributors"}]
+authors = [{name = "Zelin Zhang"}, {name = "Zhenyu Zhang"}, {name = "Bin Chen"}]
+maintainers = [{name = "Zelin Zhang", email = "zhangzelin1@nbu.edu.cn"}]
 dependencies = ["numpy>=1.24", "h5py>=3.8"]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Science/Research",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python :: 3",

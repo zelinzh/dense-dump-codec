@@ -1,6 +1,6 @@
 """Predictive codec primitives for dense simulation dump sequences."""
 
-__version__ = "0.4.0rc1"
+__version__ = "1.0.0"
 
 from .core import (
     EPS,

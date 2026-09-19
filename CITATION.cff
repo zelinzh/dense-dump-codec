@@ -7,6 +7,7 @@ abstract: >-
   PHDF reconstruction and native-array input for slow-light radiative transfer.
 type: software
 version: 1.0.0
+date-released: 2026-09-19
 repository-code: "https://github.com/zelinzh/dense-dump-codec"
 license: BSD-3-Clause
 authors:

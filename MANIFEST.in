@@ -1,6 +1,6 @@
 include LICENSE CITATION.cff README.md README.zh.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
-include SHA256SUMS
-recursive-include scripts *.py
+include .gitignore SHA256SUMS
+recursive-include scripts *.py *.md
 recursive-include tests *.py
 recursive-include examples *.py
 recursive-include configs *.json

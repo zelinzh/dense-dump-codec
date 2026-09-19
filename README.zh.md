@@ -152,12 +152,15 @@ LZ4 工作缓存、半径裁剪与紧凑传输见 [集成说明](docs/KPOLARIS.m
 
 如果在研究中使用 DDC，请引用本软件：
 
+DOI：[10.5281/zenodo.22845273](https://doi.org/10.5281/zenodo.22845273)。
+
 ```bibtex
 @software{zhang_dense_dump_codec,
   author  = {Zhang, Zelin and Zhang, Zhenyu and Chen, Bin},
   title   = {{Dense Dump Codec}},
   year    = {2026},
   version = {1.0.0},
+  doi     = {10.5281/zenodo.22845273},
   url     = {https://github.com/zelinzh/dense-dump-codec}
 }
 ```

@@ -1,6 +1,6 @@
 # Dense Dump Codec
 
-[Format](docs/FORMAT.md) · [KPolaris integration](docs/KPOLARIS.md) · [中文使用说明](README.zh.md)
+[arXiv:2609.26317](https://arxiv.org/abs/2609.26317) · [Format](docs/FORMAT.md) · [KPolaris integration](docs/KPOLARIS.md) · [中文使用说明](README.zh.md)
 
 DDC stores a dense simulation time series as **original exact anchors plus
 compressed, quantized residuals for the intervening calculated states**. It
@@ -172,9 +172,26 @@ Maintainer: Zelin Zhang — [zhangzelin1@nbu.edu.cn](mailto:zhangzelin1@nbu.edu.
 
 ## Citation
 
-If you use DDC in your research, please cite the software:
+If you use DDC in your research, please cite the paper and the software version used.
 
-DOI: [10.5281/zenodo.22845273](https://doi.org/10.5281/zenodo.22845273).
+Zelin Zhang, Zhenyu Zhang and Bin Chen (2026), *Dense Dump Codec: Error-Controlled,
+Random-Access Compression of GRMHD Time Series for Slow-Light Radiative Transfer*.
+[arXiv:2609.26317](https://arxiv.org/abs/2609.26317).
+
+```bibtex
+@misc{zhang2026ddc,
+  author        = {Zhang, Zelin and Zhang, Zhenyu and Chen, Bin},
+  title         = {{Dense Dump Codec}: Error-Controlled, Random-Access Compression
+                   of {GRMHD} Time Series for Slow-Light Radiative Transfer},
+  year          = {2026},
+  eprint        = {2609.26317},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.26317}
+}
+```
+
+Version 1.0.0 DOI: [10.5281/zenodo.22845273](https://doi.org/10.5281/zenodo.22845273).
+The [all-versions DOI](https://doi.org/10.5281/zenodo.22845272) identifies the software across releases.
 
 ```bibtex
 @software{zhang_dense_dump_codec,

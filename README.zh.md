@@ -1,5 +1,7 @@
 # Dense Dump Codec：使用说明
 
+[arXiv:2609.26317](https://arxiv.org/abs/2609.26317)
+
 Dense Dump Codec（DDC）用于压缩密集的 GRMHD 时间序列，支持随机访问、
 原格式文件恢复和慢光辐射转移所需的原生数组读取。
 
@@ -150,9 +152,26 @@ LZ4 工作缓存、半径裁剪与紧凑传输见 [集成说明](docs/KPOLARIS.m
 
 ## 8. 引用
 
-如果在研究中使用 DDC，请引用本软件：
+如果在研究中使用 DDC，请引用论文及所使用的软件版本。
 
-DOI：[10.5281/zenodo.22845273](https://doi.org/10.5281/zenodo.22845273)。
+Zelin Zhang、Zhenyu Zhang 和 Bin Chen（2026），*Dense Dump Codec: Error-Controlled,
+Random-Access Compression of GRMHD Time Series for Slow-Light Radiative Transfer*。
+[arXiv:2609.26317](https://arxiv.org/abs/2609.26317)。
+
+```bibtex
+@misc{zhang2026ddc,
+  author        = {Zhang, Zelin and Zhang, Zhenyu and Chen, Bin},
+  title         = {{Dense Dump Codec}: Error-Controlled, Random-Access Compression
+                   of {GRMHD} Time Series for Slow-Light Radiative Transfer},
+  year          = {2026},
+  eprint        = {2609.26317},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.26317}
+}
+```
+
+版本 1.0.0 DOI：[10.5281/zenodo.22845273](https://doi.org/10.5281/zenodo.22845273)。
+[全版本 DOI](https://doi.org/10.5281/zenodo.22845272) 用于标识软件的所有发布版本。
 
 ```bibtex
 @software{zhang_dense_dump_codec,

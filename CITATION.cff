@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite Dense Dump Codec using the metadata below."
+message: "If you use DDC in your research, please cite the paper and the software version used. The paper is given in preferred-citation; the top-level metadata identify the software version."
 title: "Dense Dump Codec"
 abstract: >-
   Dense Dump Codec compresses dense GRMHD time series using original exact
@@ -43,3 +43,23 @@ keywords:
   - scientific data compression
   - GRMHD
   - slow-light radiative transfer
+preferred-citation:
+  type: generic
+  title: "Dense Dump Codec: Error-Controlled, Random-Access Compression of GRMHD Time Series for Slow-Light Radiative Transfer"
+  authors:
+    - family-names: Zhang
+      given-names: Zelin
+      orcid: "https://orcid.org/0009-0008-9585-1807"
+    - family-names: Zhang
+      given-names: Zhenyu
+      orcid: "https://orcid.org/0000-0003-0869-4601"
+    - family-names: Chen
+      given-names: Bin
+      orcid: "https://orcid.org/0000-0003-4509-9705"
+  year: 2026
+  url: "https://arxiv.org/abs/2609.26317"
+  identifiers:
+    - type: other
+      value: "arXiv:2609.26317"
+      description: "arXiv preprint"
+  scope: "Cite this paper together with the software version used."
